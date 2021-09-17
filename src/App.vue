@@ -13,6 +13,7 @@
    
    * {
       font-family: 'Poppins', Sans-Serif;
+      user-select: none;
    }
    
 </style>

@@ -15,7 +15,7 @@
 <style>
    
    .search-bar {
-      @apply w-full px-5 py-4 flex items-center justify-between;
+      @apply w-full px-5 flex items-center justify-between;
    }
    
    .search-wrapper {
@@ -23,7 +23,11 @@
    }
    
    .search-wrapper input {
-      @apply w-full px-3;
+      @apply w-full px-3 focus:placeholder-gray-700;
+   }
+   
+   input[type=text]:focus, input[type=text]:active {
+      outline: none;
    }
    
    .search-wrapper, .search-wrapper input, .search-wrapper i {
