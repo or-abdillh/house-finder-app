@@ -4,10 +4,10 @@
          <div class="card-wrapper">
            <div class="card-header">
               <img src="/house-finder.jpeg"/>  
-              <i class="fa fa-heart absolute top-3 right-3 text-xl text-gray-500"></i>
+              <i class="far fa-heart absolute top-3 right-3 text-2xl text-gray-200"></i>
            </div> 
            <div class="card-footer">
-           <h1 class="text-xl font-medium" >The Penisula Chicago</h1>
+           <h1 @click="changeTab()" class="text-2xl text-gray-600 font-semibold" >The Penisula Chicago</h1>
            <span>
               <i class="fa fa-bed"></i>
               4
@@ -58,3 +58,15 @@
       @apply text-yellow-500 inline-block mt-2;
    }
 </style>
+
+<script setup>
+   
+   import { defineEmits } from 'vue'
+   
+   const emits = defineEmits(['change-tab'])
+   
+   const changeTab = () => {
+      emits('changeTab')
+   }
+   
+</script>

@@ -2,7 +2,7 @@
    <Navbar></Navbar>
    <Searchbar></Searchbar>
    <Category></Category>
-   <Card></Card>
+   <Card v-on:change-tab="changeTab()" ></Card>
 </template>
 
 <style>
@@ -15,5 +15,12 @@
    import Searchbar from '../components/Searchbar.vue'
    import Category from '../components/Category.vue'
    import Card from '../components/Card.vue'
+   import { defineEmits } from 'vue'
+   
+   const emits = defineEmits(['change-tab'])
+   
+   const changeTab = () => {
+      emits('change-tab')
+   }
    
 </script>

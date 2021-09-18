@@ -13,7 +13,7 @@
 <style>
    
    .category {
-      @apply w-full mb-5 px-5 py-4 flex overflow-scroll items-center justify-between;
+      @apply w-full px-5 py-4 flex overflow-scroll items-center justify-between;
    }
    
    .category-box {
