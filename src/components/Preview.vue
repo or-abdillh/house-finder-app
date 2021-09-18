@@ -1,0 +1,50 @@
+<template>
+   <section class="preview">
+      <img :src="currentImg" />
+      <i class="fas fa-arrow-left btn-back"></i>
+   </section>
+   <section class="thumbnails">
+      <template v-for="img in images" :key="img" >
+         <div @click="changeImg(img)" :class="currentImg === img ? 'active' : ''" class="thumb-box">
+            <img :src="img">
+         </div>
+      </template>
+   </section>
+</template>
+
+<style>
+   
+   .preview {
+      @apply relative rounded-3xl rounded-t-none overflow-hidden mt-0;
+   }
+   
+   .btn-back {
+      @apply text-2xl absolute top-5 left-3 text-gray-50;
+   }
+   
+   .thumbnails {
+      @apply px-4 mt-5 mb-5 flex;
+   }
+   
+   .thumb-box {
+      @apply rounded-md overflow-hidden border-2 border-gray-100 duration-300;
+   }
+   
+   .active {
+      @apply shadow-lg;
+   }
+   
+   .thumb-box:not(:last-child) {
+      @apply mr-3;
+   }
+</style>
+
+<script setup>
+   
+   import { ref } from 'vue'
+   
+   const images = ref(['house-finder.jpeg', 'house-finder-2.jpg', 'house-finder-3.jpg', 'house-finder-4.jpg'])
+   const currentImg = ref(images.value[0])
+   
+   const changeImg = img => currentImg.value = img
+</script>
