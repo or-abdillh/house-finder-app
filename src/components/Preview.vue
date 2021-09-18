@@ -19,11 +19,15 @@
    }
    
    .btn-back {
-      @apply text-2xl absolute top-5 left-3 text-gray-50;
+      @apply text-2xl absolute top-5 left-3 text-gray-50 duration-300;
+   }
+   
+   .btn-back:active {
+      transform: scale(1.2);
    }
    
    .thumbnails {
-      @apply px-4 mt-5 mb-5 flex overflow-scroll;
+      @apply w-full px-4 mt-5 mb-5 flex overflow-scroll;
    }
    
    .thumb-box {
@@ -31,7 +35,7 @@
    }
    
    .active {
-      @apply shadow-lg;
+      @apply border-yellow-400 shadow-lg;
    }
    
    .thumb-box:not(:last-child) {
@@ -49,6 +53,8 @@
    
    const changeImg = img => currentImg.value = img
    const changeTab = () => {
-      emits('change-tab')
+      setTimeout(() => {
+         emits('change-tab')
+      }, 500)
    }
 </script>
