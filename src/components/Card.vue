@@ -7,7 +7,7 @@
               <i @click="btnLike" class="far fa-heart absolute top-3 right-3 text-2xl text-gray-200" data-click="false"></i>
            </div> 
            <div class="card-footer">
-           <h1 @click="changeTab()" class="title-card" >The Penisula Chicago</h1>
+           <h1 @click="changeTab()" class="title-card" >The Peninsula Chicago</h1>
            <span>
               <i class="fa fa-bed"></i>
               4
