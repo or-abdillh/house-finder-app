@@ -1,11 +1,25 @@
 <template>
-   <Navbar></Navbar>
-   <Searchbar></Searchbar>
-   <Category></Category>
-   <Card v-on:change-tab="changeTab()" ></Card>
+   <section class="fade-in">
+      <Navbar></Navbar>
+      <Searchbar></Searchbar>
+      <Category></Category>
+      <Card v-on:change-tab="changeTab()" ></Card>
+   </section>
 </template>
 
 <style>
+   
+   @keyframes fade-in {
+      from {
+         opacity: .35;
+      } to {
+         opacity: 1;
+      }
+   }
+   
+   .fade-in {
+      animation: fade-in .3s forwards;
+   }
    
 </style>
 

@@ -23,7 +23,7 @@
    }
    
    .btn-back:active {
-      transform: scale(1.2);
+      transform: scale(1.5);
    }
    
    .thumbnails {
@@ -34,7 +34,7 @@
       @apply rounded-md overflow-hidden border-2 border-gray-100 duration-300;
    }
    
-   .active {
+   .thumbnails .active {
       @apply border-yellow-400 shadow-lg;
    }
    

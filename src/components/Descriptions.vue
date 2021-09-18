@@ -7,7 +7,7 @@
                <template v-for="star in 5">
                   <i class="text-yellow-500 fa fa-star" ></i>
                </template>
-               <small class="ml-2">8.9</small>
+               <small class="ml-2">(5,0)</small>
             </span>
          </div>
          <div>
@@ -22,10 +22,16 @@
                <div class="icon-wrapper" :class="thumb.bg">
                   <i :class="thumb.icons" ></i>
                </div>
-               <small class="text-xs font-semibold">{{ thumb.text }}</small>
+               <small class="text-xs">{{ thumb.text }}</small>
             </div>
          </template>
-      </div>   
+      </div>
+      <div class="mt-10">
+         <h1 class="font-semibold" >Descriptions</h1>
+         <p class="font-light" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+         tempor incididunt ut labore et dolore magna aliqua. 
+         Risus sed vulputate odio ut enim vulputate odio ut enim.</p>
+      </div>
    </section>
 </template>
 
@@ -70,7 +76,6 @@
    .thumb-bg-secondary {
       background: #E4E5FC;
    }
-   
 </style>
 
 <script setup>

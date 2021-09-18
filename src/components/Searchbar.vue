@@ -7,7 +7,7 @@
          <input type="text" placeholder="Search"/>
       </div>
       <button class="btn-filter" type="button">
-         <i class="fas fa-filter"></i>
+         <i class="fas fa-filter duration-300"></i>
       </button>
    </section>   
 </template>
@@ -26,6 +26,7 @@
       @apply w-full px-3 focus:placeholder-gray-700;
    }
    
+   
    input[type=text]:focus, input[type=text]:active {
       outline: none;
    }
@@ -36,6 +37,10 @@
    
    .btn-filter {
       @apply px-3 py-2 text-xl rounded-md text-gray-50;
+   }
+   
+   .btn-filter i:active {
+      transform: scale(.75);
    }
    
    .btn-filter {

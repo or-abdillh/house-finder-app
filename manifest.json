@@ -1,0 +1,8 @@
+{
+   "name": "House Finder App",
+   "short_name": "House Finder App",
+   "orientation": "potrait",
+   "display": "standalone",
+   "background": "#FFFFFF",
+   "theme_color": "#FFFFFF"
+}

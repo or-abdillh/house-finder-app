@@ -1,10 +1,10 @@
 <template>
    <section class="navbar">
       <div class="menu-box">
-         <i class="fas fa-bars"></i>
+         <i class="fas fa-bars duration-300"></i>
       </div>
       <div class="menu-box bg-gray-300 px-2 py-1 rounded-md">
-         <i class="fas fa-user"></i>
+         <i class="fas fa-user duration-300"></i>
       </div>
       <div class="greetings">
          <h1>Find Your Dream <br /> Home</h1>
@@ -20,6 +20,10 @@
    
    .menu-box {
       @apply text-gray-700 text-2xl;
+   }
+   
+   .menu-box i:active { 
+      transform: scale(.75);
    }
    
    .greetings {
