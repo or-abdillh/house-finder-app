@@ -1,7 +1,7 @@
 <h3 align="center">HOUSE FINDER APP</h3>
 <p align="center">Slicing project #01</p>
 
-<img src="./src/assets/banner-house-finder-app.png" width="100%" alt="">
+<img src="banner-house-finder-app.png" width="100%" alt="">
 
 ### About
 This is my projects to make UI using front end tech 
