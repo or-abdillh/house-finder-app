@@ -1,6 +1,6 @@
 <template>
    <section class="card">
-      <template v-for="card in 5">
+      <template v-for="card in 10">
          <div class="card-wrapper">
            <div class="card-header">
               <img src="/house-finder.jpeg"/>  
@@ -35,7 +35,7 @@
    }
    
    .card-wrapper {
-      @apply w-full mb-5 mx-auto rounded-2xl overflow-hidden border-2 border-gray-200;
+      @apply w-full md:w-10/12 mb-5 mx-auto rounded-2xl overflow-hidden border-2 border-gray-200;
    }
    
    .card-header {

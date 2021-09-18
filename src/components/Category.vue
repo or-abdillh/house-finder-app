@@ -17,7 +17,7 @@
    }
    
    .category-box {
-      @apply border-gray-300 px-4 py-1 rounded-md duration-300 border;
+      @apply md:w-4/12 md:mr-5 md:text-center border-gray-300 px-4 py-1 rounded-md duration-300 border;
    }
    
    .active {
