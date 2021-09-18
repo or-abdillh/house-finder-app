@@ -1,5 +1,5 @@
 <template>
-   <Preview @click="changeTab()"></Preview>
+   <Preview v-on:change-tab="changeTab()"></Preview>
 </template>
 
 <script setup >

@@ -1,7 +1,7 @@
 <template>
    <section class="preview">
       <img :src="currentImg" />
-      <i class="fas fa-arrow-left btn-back"></i>
+      <i @click="changeTab()" class="fas fa-arrow-left btn-back"></i>
    </section>
    <section class="thumbnails">
       <template v-for="img in images" :key="img" >
@@ -23,7 +23,7 @@
    }
    
    .thumbnails {
-      @apply px-4 mt-5 mb-5 flex;
+      @apply px-4 mt-5 mb-5 flex overflow-scroll;
    }
    
    .thumb-box {
@@ -41,10 +41,14 @@
 
 <script setup>
    
-   import { ref } from 'vue'
+   import { ref, defineEmits } from 'vue'
    
-   const images = ref(['house-finder.jpeg', 'house-finder-2.jpg', 'house-finder-3.jpg', 'house-finder-4.jpg'])
+   const images = ref(['house-finder.jpeg', 'house-finder-2.jpg', 'house-finder-3.jpg', 'house-finder-4.jpg', 'house-finder-5.jpeg'])
    const currentImg = ref(images.value[0])
+   const emits = defineEmits(['change-tab'])
    
    const changeImg = img => currentImg.value = img
+   const changeTab = () => {
+      emits('change-tab')
+   }
 </script>
