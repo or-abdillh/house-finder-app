@@ -18,7 +18,8 @@ Where the ideas and the concept i use from any other designer UI/UX from Instagr
 - Acode code editor
 
 ### Responsive Test
-this project just available to mobile screen 📌
+Test via [Am I Responsive](http://ami.responsivedesign.is/)
+<img src="src/assets/banner-2.jpg" width="100%" alt="">
 
 ### Install Vite JS
 - <code>npm init vite@latest</code>
